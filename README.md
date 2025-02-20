@@ -1,6 +1,6 @@
 # 🖼 AI 기반 텍스트 & 이미지 생성기
 
-이 프로젝트는 **Flask + Streamlit + Diffusers**를 활용하여 **텍스트 및 이미지 생성이 가능한 AI 웹 애플리케이션**입니다. 사용자는 **LLM 기반 텍스트 생성** 및 **Stable Diffusion을 활용한 이미지 생성**을 수행할 수 있습니다.
+이 프로젝트는 **Flask + Streamlit + Diffusers**를 활용하여 **텍스트 및 이미지 생성이 가능한 AI 웹 애플리케이션**입니다. 사용자는 **LLM 기반 텍스트 생성** 및 **Stable Diffusion을 활용한 이미지 생성**을 수행할 수 있습니다. 특히 가구배치에 대한 설명을 넣으면 이에 맞는 이미지를 generate 한다.
 
 ## 📌 프로젝트 개요
 
@@ -80,11 +80,11 @@ streamlit run app.py --server.port 8501 --server.address 0.0.0.0
 - **요청 방식:** `POST`
 - **요청 데이터(JSON):**
   ```json
-  {"prompt": "Write a short fantasy story"}
+  {"prompt": "Describe about energetic living room."}
   ```
 - **응답 데이터(JSON):**
   ```json
-  {"generated_text": "Once upon a time in a distant kingdom..."}
+  {"generated_text": "Living room which is energetic ..."}
   ```
 
 ### \*\*2️⃣ 이미지 생성 (`/generate_image`)
@@ -92,27 +92,9 @@ streamlit run app.py --server.port 8501 --server.address 0.0.0.0
 - **요청 방식:** `POST`
 - **요청 데이터(JSON):**
   ```json
-  {"prompt": "A futuristic city at sunset"}
+  {"prompt": "A comfortable bedroom"}
   ```
 - **응답 데이터:** 생성된 이미지 (`image/png` 포맷)
-
----
-
-## 🖼 예제 실행 결과
-
-### 🔹 텍스트 생성 예시
-
-**입력:** `"Describe a medieval castle"`
-
-**출력:**
-
-> "A grand fortress with towering stone walls and intricate battlements..."
-
-### 🔹 이미지 생성 예시
-
-**입력:** `"A mystical forest with glowing trees"`
-
-**출력:**&#x20;
 
 ---
 
