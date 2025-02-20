@@ -126,10 +126,4 @@ streamlit run app.py --server.port 8501 --server.address 0.0.0.0
 
 ---
 
-## 🏆 기여 및 라이선스
-
-- 이 프로젝트는 MIT 라이선스를 따릅니다.
-- 기여를 원하시면 `Pull Request`를 보내주세요!
-
-🔥 **이제 Flask와 Streamlit을 실행하면 AI 기반 텍스트 & 이미지 생성기가 동작합니다! 🚀**
 
