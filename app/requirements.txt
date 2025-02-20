@@ -1,0 +1,8 @@
+flask
+streamlit
+torch
+transformers
+diffusers
+flask-cors
+pydantic
+requests
